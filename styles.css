@@ -110,6 +110,57 @@ footer button a {
         margin-top: 20px; /* Ajuste del margen superior del título */
     }
 }
+.compartir {
+    background-color: #508350; /* Color verde */
+    color: #000; /* Color del texto negro */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.compartir:hover {
+    background-color: #204220; /* Cambia el color de fondo al pasar por encima */
+}
+header {
+    background-color: #508350;
+    padding: 20px;
+    position: relative;
+    width: 100%; /* Asegura que el encabezado cubra toda la pantalla */
+}
+
+/* Agrega estilos para el contenedor de los botones */
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en pantallas pequeñas */
+}
+
+footer button {
+    background-color: #508350;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer button a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-buttons {
+        flex-direction: column; /* Cambia la dirección de los botones a columna en pantallas pequeñas */
+    }
+}
+
 
 
 
