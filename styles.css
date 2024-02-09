@@ -10,22 +10,40 @@ body {
 }
 
 header {
-    position: relative;
     background-color: #508350; /* Verde más claro */
     padding: 20px;
-    text-align: center;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute; /* Ajusta la posición del logo */
+    top: 10px; /* Ajusta el margen superior del logo */
+    left: 10px; /* Ajusta el margen izquierdo del logo */
 }
 
 .logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
     width: 100px; /* Ajusta el tamaño de acuerdo a tus necesidades */
     height: auto;
 }
 
+h1 {
+    margin-top: 20px; /* Ajusta el margen superior del título */
+    text-align: center; /* Centra el título horizontalmente */
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav {
+    text-align: center; /* Centra los enlaces horizontalmente */
+}
+
 nav ul {
     list-style-type: none;
+    margin: 0; /* Elimina el margen para alinear horizontalmente los enlaces */
+    padding: 0; /* Elimina el relleno para alinear horizontalmente los enlaces */
 }
 
 nav ul li {
@@ -48,31 +66,61 @@ section {
     margin-bottom: 50px; /* Ajuste de margen inferior para la dirección */
 }
 
-.botones-container {
+footer {
     display: flex;
     justify-content: center;
-    overflow-x: auto; /* Permite el desplazamiento horizontal en dispositivos móviles */
-    white-space: nowrap; /* Evita que los botones se envuelvan a una nueva línea */
 }
 
-.botones-container button {
-    padding: 15px 30px;
-    font-size: 18px;
-    margin: 0 10px;
-    background-color: #808080; /* Gris */
+footer button {
+    background-color: #508350; /* Verde más claro */
     color: #000; /* Letras negras */
     border: none;
+    padding: 10px 20px;
+    margin: 10px;
     border-radius: 5px;
+    text-decoration: none;
     cursor: pointer;
 }
 
-@media only screen and (min-width: 600px) {
-    .botones-container button {
-        padding: 15px 30px;
-        font-size: 18px;
-        margin: 0 10px;
+footer button a {
+    color: #000; /* Cambia el color del enlace dentro del botón a negro */
+    text-decoration: none; /* Quita la subrayado del enlace */
+    font-family: Arial, sans-serif; /* Mantener la misma fuente que el resto del contenido */
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        margin-top: 10px; /* Ajuste de margen superior del título en dispositivos móviles */
     }
 }
+.subtitulo {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+}
+@media only screen and (max-width: 600px) {
+    .logo-container {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    h1 {
+        margin-top: 20px; /* Ajuste del margen superior del título */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
