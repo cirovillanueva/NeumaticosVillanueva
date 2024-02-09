@@ -1,0 +1,7 @@
+CREATE TABLE Reseñas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    calificación INT NOT NULL,
+    opinión TEXT,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
