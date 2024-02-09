@@ -47,14 +47,22 @@ section {
 }
 
 .botones-container button {
-    padding: 15px 30px;
-    font-size: 18px;
-    margin: 0 10px;
+    padding: 10px 20px; /* Reducimos el relleno de los botones en dispositivos móviles */
+    font-size: 16px; /* Reducimos el tamaño del texto de los botones en dispositivos móviles */
+    margin: 0 5px; /* Reducimos el margen entre los botones en dispositivos móviles */
     background-color: #204220;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    .botones-container button {
+        padding: 15px 30px; /* Restauramos el tamaño original de los botones en pantallas más grandes */
+        font-size: 18px;
+        margin: 0 10px;
+    }
 }
 
 
