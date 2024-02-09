@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #000;
+    background-color: #fff; /* Blanco */
+    color: #000; /* Letras negras */
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,9 +10,18 @@ body {
 }
 
 header {
-    background-color: #204220;
+    position: relative;
+    background-color: #508350; /* Verde más claro */
     padding: 20px;
     text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px; /* Ajusta el tamaño de acuerdo a tus necesidades */
+    height: auto;
 }
 
 nav ul {
@@ -47,11 +56,11 @@ section {
 }
 
 .botones-container button {
-    padding: 10px 20px; /* Reducimos el relleno de los botones en dispositivos móviles */
-    font-size: 16px; /* Reducimos el tamaño del texto de los botones en dispositivos móviles */
-    margin: 0 5px; /* Reducimos el margen entre los botones en dispositivos móviles */
-    background-color: #204220;
-    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 0 10px;
+    background-color: #808080; /* Gris */
+    color: #000; /* Letras negras */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -59,11 +68,13 @@ section {
 
 @media only screen and (min-width: 600px) {
     .botones-container button {
-        padding: 15px 30px; /* Restauramos el tamaño original de los botones en pantallas más grandes */
+        padding: 15px 30px;
         font-size: 18px;
         margin: 0 10px;
     }
 }
+
+
 
 
 
