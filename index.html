@@ -57,7 +57,24 @@
     
         
     </footer>
-
+    <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+        </p>
+        <p>
+          <button type="submit">Enviar</button>
+        </p>
+      </form>
+      
     <script src="script.js"></script>
 </body>
 </html>
