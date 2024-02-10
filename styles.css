@@ -24,7 +24,9 @@ header {
 .logo {
     width: 100px; /* Ajusta el tamaño de acuerdo a tus necesidades */
     height: auto;
+    border-radius: 10px; /* Define el radio de redondeo de las esquinas */
 }
+
 
 h1 {
     margin-top: 20px; /* Ajusta el margen superior del título */
